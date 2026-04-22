@@ -270,7 +270,7 @@
 ;; same output. In this case we might want to cache the return value of the
 ;; first call, so that we don't have to recompute it for subsequent calls.
 
-;; We can demonstrate this with `rand`. Every time we call `rand` with the same
+;; We can demonstrate this with `rand-int`. Every time we call `rand-int` with the same
 ;; argument, each invocation will cause the body to run:
 (rand-int 100)
 ^{:nextjournal.clerk/no-cache true}
