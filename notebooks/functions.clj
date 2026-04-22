@@ -279,7 +279,7 @@
 (rand-int 100)
 
 ;; so in this case we got a different random number for the second and third
-;; calls. But if we `(memoize rand)`:
+;; calls. But if we `(memoize rand-int)`:
 ^{:nextjournal.clerk/visibility {:result :hide}}
 (def rand-once (memoize rand-int))
 
